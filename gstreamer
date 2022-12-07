@@ -1,0 +1,15 @@
+v4l2-ctl  -d /dev/video11 --set-fmt-video=width=1920,height=1080,pixelformat='NV24' --stream-mmap=4  --stream-skip=10  --stream-poll --
+
+
+
+v4l2-ctl  -d /dev/video11 --set-fmt-video=width=1920,height=1080,pixelformat='NV24' --stream-mmap=4  --stream-skip=10  --stream-to=/data/4kp60_nv24.yuv --stream-count=1 --stream-poll
+
+
+ffplay -f rawvideo -video_size 1920x1080 -pixel_format  nv24 4kp60_nv24.yuv
+
+gst-launch-1.0 -v v4l2src device=/dev/video12 ! videoconvert ! autovideosink
+
+gst-launch-1.0 -v v4l2src device=/dev/video11 ! videoconvert ! queue ! videorate ! video/x-raw,width=1920,height=1080,framerate=10/1 !  autovideosink sync=false
+
+
+gst-launch-1.0 -v v4l2src device=/dev/video11 ! videoconvert ! queue ! videorate ! video/x-raw,width=1920,height=1080,framerate=60/1 ! fpsdisplaysink sync=false video-sink="autovideosink" -v
