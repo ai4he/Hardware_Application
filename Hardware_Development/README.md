@@ -12,7 +12,7 @@
   * Power on the device(RK 3588)
   
   * Install python 3 version to device(RK 3588)
-       >>Before run these files install Python in device(RK 3588).Because most of the files are written in Python
+     >>Before run these files install Python in device(RK 3588).Because most of the files are written in Python
         
   * Download videoaudio.py file from this folder.
      >> this file include code how to capture video and audio input from your computer.
