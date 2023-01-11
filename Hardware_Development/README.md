@@ -1,7 +1,7 @@
 # Hardware_Development
 
 
-<h3>In this folder files include how (RK3588)device capture video and audio from your computer. These files are written by python and C. Before run these files,please do the following </h3>
+<h3>In this folder files include how (RK3588)device capture video and audio from your computer. These files are written by python and C. In this file we use libraris as Numpy,OpenCv.Before run these files,please do the following </h3>
 
   * Using a HDMI cable, Connect device(RK3588) HDMI input to you computer HDMI port.
      >>This can capture the video input from computer and it transfer to the device
@@ -15,5 +15,7 @@
        >>Before run these files install Python in device(RK 3588).Because most of the files are written in Python
         
   * Download videoaudio.py file from this folder.
-
-  * Run videoaudio.py file using your therminal and it can show your computer desktop in the monitor.
+     >> this file include code how to capture video and audio input from your computer.
+     
+  * Open therminal in device(RK 3588) and execute the videoaudio.py file 
+   >> Execute the videoaudio.py file gives your computer HDMI input to the Desktop monitor.
