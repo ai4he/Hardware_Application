@@ -11,6 +11,6 @@
  
 #### Computer Vision 
 
-#### AI Modeling folder 
+#### AI Modeling 
 
 
