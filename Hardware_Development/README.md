@@ -15,7 +15,8 @@
      >>Before run these files install Python in device(RK 3588).Because most of the files are written in Python
         
   * Download videoaudio.py file from this folder.
-     >> this file include code how to capture video and audio input from your computer.
+     >> In this file include code how to capture video and audio input from your computer.
      
-  * Open therminal in device(RK 3588) and execute the videoaudio.py file 
+  * Open therminal in device(RK 3588) and setup to the right path and execute the videoaudio.py file 
+     >> Use command "python3 videoaudio.py"
      >> Execute the videoaudio.py file gives your computer HDMI input to the Desktop monitor.
