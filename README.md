@@ -7,7 +7,7 @@
 
 * In Hardware Development folder include 
   * Information about the device (RK3588)
-  * video and audio caputure files using HDMI 
+  * Video and Audio caputure files using HDMI 
  
 * In Computer Vision folder include 
 
