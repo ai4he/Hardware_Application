@@ -1,10 +1,11 @@
 # Hardware_Development
 
 
-* In this folder files include how (RK3588)device capture video and audio from your computer. Before run these files,please do the following 
+* In this folder files include how (RK3588)device capture video and audio from your computer.These files are written by python and C.Before run these files,please do the following 
 
   * Using a HDMI cable, Connect device(RK3588) HDMI input to you computer HDMI port.
-  
+     <p>This can capture the video input from computer and it transfer to the device  <p>
+      
   * Using another HDMI cable, Connect device(3588) HDMI output to Desktop monitor HDMI input.
 
   * Power on the device(RK 3588)
