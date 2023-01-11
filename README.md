@@ -1,6 +1,6 @@
 # Embedded Image Capturing Object Detection for the Analysis of Activity in the Workplace
 
-#### This project include three folders 
+#### In this project include three folders 
   * Hardware Development
   * AI Modeling 
   * Computer Vision
