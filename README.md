@@ -5,12 +5,12 @@
   * AI Modeling 
   * Computer Vision
 
-#### In Hardware Development folder include 
+#### Hardware Development 
   * Information about the device (RK3588)
   * Video and Audio caputure files using HDMI 
  
-* In Computer Vision folder include 
+#### Computer Vision 
 
-* In AI modeling folder include 
+#### AI Modeling folder 
 
 
