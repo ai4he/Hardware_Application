@@ -1,14 +1,16 @@
 # Hardware_Development
 
 
-* In this folder files include how (RK3588)device capture videio and audio from your computer.Before run this files,please do the following 
+* In this folder files include how (RK3588)device capture video and audio from your computer.Before run these files,please do the following 
 
-* 1. install python latest version in your operating system.
+  * Using a HDMI cable,Connect device(RK3588) HDMI input to you computer HDMI port.
+  
+  * Using another HDMI cable,Connect device(3588) HDMI output to Desktop monitor HDMI input.
 
-* 2. Download videoaudio.py file.
+  * Swith on the device(RK 3588)
+  
+  * Install python 3 version to device(RK 3588)
 
-- 3. connect your machine to the hardware(ITX-3588J) as a input HDMI.
+  * Download videoaudio.py file from this folder.
 
-- 4. connect monitor to the hardware(ITX-3588J) as a output HDMI.
-
-- 5. Run the videoaudio.py
+  * 
