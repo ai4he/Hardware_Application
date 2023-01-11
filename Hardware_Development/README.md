@@ -1,6 +1,9 @@
 # Hardware_Development
 
-* 1. install python latest version in your operating system
+
+* In this folder files include how (RK3588)device capture videio and audio from your computer.Before run this files,please do the following 
+
+* 1. install python latest version in your operating system.
 
 * 2. Download videoaudio.py file.
 
