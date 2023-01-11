@@ -9,3 +9,4 @@
 - 4. connect monitor to the hardware(ITX-3588J) as a output HDMI.
 
 - 5. Run the videoaudio.py
+sd
