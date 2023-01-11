@@ -13,4 +13,4 @@
 
   * Download videoaudio.py file from this folder.
 
-  * 
+  * Run videoaudio.py file using your therminal and it can show your computer desktop in the monitor.
