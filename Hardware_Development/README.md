@@ -7,7 +7,7 @@
   
   * Using another HDMI cable,Connect device(3588) HDMI output to Desktop monitor HDMI input.
 
-  * Swith on the device(RK 3588)
+  * Power on the device(RK 3588)
   
   * Install python 3 version to device(RK 3588)
 
