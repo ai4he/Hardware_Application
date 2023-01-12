@@ -10,7 +10,8 @@
   * Video and Audio caputure files using HDMI 
  
 #### Computer Vision 
+  * These files will be added during this semester
 
 #### AI Modeling 
-
+  * These files will be added during this semester
 
