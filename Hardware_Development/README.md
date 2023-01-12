@@ -6,7 +6,7 @@
   * Using a HDMI cable, Connect device(RK3588) HDMI input to you computer HDMI port.
      >This can capture the video input from computer and it transfer to the device
       
-  * Using another HDMI cable, Connect device(3588) HDMI output to Desktop monitor HDMI input.
+  * Using another HDMI cable, Connect device(RK 3588) HDMI output to Desktop monitor HDMI input.
      >Caputured video from your computer will transfer to Desktop monitor as output
       
   * Power on the device(RK 3588)
