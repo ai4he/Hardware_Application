@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Screens and Activities Form</title>
+    <script>
+        async function submitForm(event) {
+            event.preventDefault();
+            //outputDiv.innerHTML = 'Processing ...';
+
+            const session_id = document.getElementById('session_id').value;
+            const context_val = document.getElementById('context_val').value;
+            const input_val = document.getElementById('input_val').value;
+            const outputDiv = document.getElementById('output');
+
+            const response = await fetch('{{ url_for("submit") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({ session_id, context_val, input_val })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+
+                // outputDiv.innerHTML = `
+                //     <h2>Submitted Values</h2>
+                //     <p><strong>Session ID:</strong> ${data.session_id}</p>
+                //     <p><strong>Goal:</strong> ${data.goal}</p>
+                //     <p><strong>Activities:</strong> ${data.activities}</p>
+                // `;
+                outputDiv.innerHTML = JSON.stringify(data);
+                if (data.hasOwnProperty('session_id')) {
+                    document.getElementById('session_id').value = data.session_id;
+                    document.getElementById('input_val').value = '';
+                }
+            } else {
+                outputDiv.innerHTML = '<p>An error occurred while submitting the form.</p>';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Feedback on the Goals and Activities Form</h1>
+    <form onsubmit="submitForm(event)">
+        <label for="session_id">Session ID:</label>
+        <input type="text" name="session_id" id="session_id">
+        <br>
+        <label for="context_val">Goals:</label>
+        <textarea name="context_val" id="context_val" rows="4" cols="50"></textarea>
+        <br>
+        <label for="input_val">Activities:</label>
+        <textarea name="input_val" id="input_val" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="output"></div>
+</body>
+</html>
